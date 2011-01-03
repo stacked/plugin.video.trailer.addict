@@ -1,0 +1,21 @@
+[B]Version 1.0.3[/B]
+
+- Fixed playback errors
+- Updated icon
+
+[B]Version 1.0.2[/B]
+
+- Added posters to the trailer listings and the "Now Playing" hud
+- Other minor changes
+
+[B]Version 1.0.1[/B]
+
+- Only trailers are listed
+- HD trailers are used if available
+- Added "Coming Soon" page
+- Removed settings menu and download button
+- Other minor changes
+
+[B]Version 1.0.0[/B]
+
+- Converted plugin to the new add-on system.
