@@ -1,3 +1,12 @@
+[B]Version 1.0.4[/B]
+
+- Replaced os.getcwd with addon.getAddonInfo('path')
+- Added Featured Trailers menu
+- Added Front page trailers to the main menu
+- Cleaned up code
+- Updated icon
+- Other minor changes
+
 [B]Version 1.0.3[/B]
 
 - Fixed playback errors
