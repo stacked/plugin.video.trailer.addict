@@ -8,9 +8,12 @@ __date__ = '01-04-2011'
 __version__ = '1.0.4'
 __settings__ = xbmcaddon.Addon( id = 'plugin.video.trailer.addict' )
 
-search_thumb = os.path.join( __settings__.getAddonInfo( 'path' ), 'resources', 'media', 'search_icon.png' )
-media_thumb = os.path.join( __settings__.getAddonInfo( 'path' ), 'resources', 'media', 'media.png' )
 next_thumb = os.path.join( __settings__.getAddonInfo( 'path' ), 'resources', 'media', 'next.png' )
+search_thumb = os.path.join( __settings__.getAddonInfo( 'path' ), 'resources', 'media', 'search_icon.png' )
+clapperboard_thumb = os.path.join( __settings__.getAddonInfo( 'path' ), 'resources', 'media', 'clapperboard.png' )
+film_reel_thumb = os.path.join( __settings__.getAddonInfo( 'path' ), 'resources', 'media', 'film_reel.png' )
+oscar_thumb = os.path.join( __settings__.getAddonInfo( 'path' ), 'resources', 'media', 'oscar.png' )
+popcorn_thumb = os.path.join( __settings__.getAddonInfo( 'path' ), 'resources', 'media', 'popcorn.png' )
 
 def open_url( url ):
 	req = urllib2.Request( url )
@@ -75,10 +78,10 @@ def find_trailers( url, name ):
 def build_main_directory():
 	main=[
 		( __settings__.getLocalizedString(30000), search_thumb, '0' ),
-		( __settings__.getLocalizedString(30001), search_thumb, '1' ),
-		( __settings__.getLocalizedString(30002), media_thumb, '2' ),
-		( __settings__.getLocalizedString(30003), media_thumb, '3' ),
-		( __settings__.getLocalizedString(30004), media_thumb, '6' )
+		( __settings__.getLocalizedString(30001), film_reel_thumb, '1' ),
+		( __settings__.getLocalizedString(30002), clapperboard_thumb, '2' ),
+		( __settings__.getLocalizedString(30003), oscar_thumb, '3' ),
+		( __settings__.getLocalizedString(30004), popcorn_thumb, '6' )
 		]
 	for name, thumbnailImage, mode in main:
 		listitem = xbmcgui.ListItem( label = name, iconImage = "DefaultVideo.png", thumbnailImage = thumbnailImage )
