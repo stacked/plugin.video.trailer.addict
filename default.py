@@ -4,8 +4,8 @@ import xbmc, xbmcgui, xbmcplugin, urllib2, urllib, re, string, sys, os, tracebac
 __plugin__ = 'Trailer Addict'
 __author__ = 'stacked <stacked.xbmc@gmail.com>'
 __url__ = 'http://code.google.com/p/plugin/'
-__date__ = '01-04-2011'
-__version__ = '1.0.4'
+__date__ = '03-21-2012'
+__version__ = '1.0.5'
 __settings__ = xbmcaddon.Addon( id = 'plugin.video.trailer.addict' )
 
 next_thumb = os.path.join( __settings__.getAddonInfo( 'path' ), 'resources', 'media', 'next.png' )
@@ -215,7 +215,7 @@ def build_featured_directory( page ):
 def play_video( url, name ):
 	data = open_url( url )
 	url = re.compile( '<param name="movie" value="http://www.traileraddict.com/emb/(.+?)">' ).findall( data )[0]
-	if data.find( 'black-tab-hd.png' ) > 0:
+	if data.find( 'watchplus()' ) > 0:
 		url = 'http://www.traileraddict.com/fvarhd.php?tid=' + url
 	else:
 		url = 'http://www.traileraddict.com/fvar.php?tid=' + url

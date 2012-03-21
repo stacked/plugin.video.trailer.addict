@@ -1,3 +1,7 @@
+[B]Version 1.0.5[/B]
+
+- Fixed issue with "HD" videos not playing
+
 [B]Version 1.0.4[/B]
 
 - Replaced os.getcwd with addon.getAddonInfo('path')
