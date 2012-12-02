@@ -11,4 +11,9 @@
 	<string id="30009">No results found for </string>
 	<string id="30010">Try using the Film Database.</string>
 	<string id="30011">Enter the film's starting letter or word, or release year:</string>
+	<string id="30050">There was a connection error:</string>
+	<string id="30051">If this problem persists, please submit the error report.</string>
+	<string id="30052">Retry</string>
+	<string id="30053">Quit</string>
+	<string id="30054">There was an index error.</string>
 </strings>
